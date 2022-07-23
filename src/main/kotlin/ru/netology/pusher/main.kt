@@ -25,7 +25,7 @@ fun main() {
           "postAuthor": "Netology"
         }""".trimIndent()
         )
-        .setToken("f-bwd4gwTEuqOApKkTV2oZ:APA91bHvl_yaPtIcGKuY1K2VSwNK8HU5vZB3VPR9dojZzW6l3o5NjqOA72ZbHeRBMT5J0n87WrF9_Hag-OyVJZHSNhZdG8caAyqnjQcCzuFJkRANXZ_Z9-8qhj8OjynSuSF_93kQxVeg")
+        .setToken(Token.token)
         .build()
 
     val newPost = Message.builder()
@@ -36,7 +36,7 @@ fun main() {
           "postContent": "This post is very useful and will enable you to go fast in Android development."
         }""".trimIndent()
         )
-        .setToken("f-bwd4gwTEuqOApKkTV2oZ:APA91bHvl_yaPtIcGKuY1K2VSwNK8HU5vZB3VPR9dojZzW6l3o5NjqOA72ZbHeRBMT5J0n87WrF9_Hag-OyVJZHSNhZdG8caAyqnjQcCzuFJkRANXZ_Z9-8qhj8OjynSuSF_93kQxVeg")
+        .setToken(Token.token)
         .build()
 
     val wrongMessage = Message.builder()
@@ -50,9 +50,10 @@ fun main() {
           "postContent": "I have created a post, and think you must look it through"
         }""".trimIndent()
         )
-        .setToken("f-bwd4gwTEuqOApKkTV2oZ:APA91bHvl_yaPtIcGKuY1K2VSwNK8HU5vZB3VPR9dojZzW6l3o5NjqOA72ZbHeRBMT5J0n87WrF9_Hag-OyVJZHSNhZdG8caAyqnjQcCzuFJkRANXZ_Z9-8qhj8OjynSuSF_93kQxVeg")
+        .setToken(Token.token)
         .build()
     //FirebaseMessaging.getInstance().send(message)
-    FirebaseMessaging.getInstance().send(newPost)
-    //FirebaseMessaging.getInstance().send(wrongMessage)
+    //FirebaseMessaging.getInstance().send(newPost)
+    FirebaseMessaging.getInstance().send(wrongMessage)
 }
+
